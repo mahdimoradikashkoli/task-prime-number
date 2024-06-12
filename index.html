@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex w-full h-screen">
+        <div class="flex-1 flex flex-col gap-2 h-full overflow-y-auto">
+          <img
+            class="max-w-full  max-h-full"
+            src="./puplic/code background.png"
+            alt="code backgroung"
+          />
+          <img
+            class="max-w-full  max-h-full"
+            src="./puplic/code2.png"
+            alt="code backgroung"
+          />
+        </div>
+        <div class="flex-1 gap-2 bg-slate-600 flex flex-col justify-center items-center">
+          <div>
+            <input
+            id="input"
+              class="text-blue-600 p-2 outline-none border-2 border-transparent focus:!border-2 focus:!border-red-700 rounded-md bg-slate-50 w-full"
+              placeholder="example 12323..."
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <button
+            id="randomNumber"
+              class="text-green-400 hover:text-white p-1 bg-blue-700 rounded-md"
+            >
+              تولید عدد تصادفی
+            </button>
+            <button
+            id="firstNumber"
+              class="text-green-400 hover:text-white p-1 bg-blue-700 rounded-md"
+            >
+              ایجاد عدد اول
+            </button>
+            <button
+            id="clear"
+              class="text-green-400 hover:text-white p-1 bg-blue-700 rounded-md"
+            >
+              clear input
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./dist/index.js"></script>
+  </body>
+</html>
